@@ -7,6 +7,7 @@ import mediapipe as mp
 from keras.models import load_model # type: ignore
 import webbrowser
 
+
 model = load_model("model.h5")
 label = np.load("labels.npy")
 holistic = mp.solutions.holistic
